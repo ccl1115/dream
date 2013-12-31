@@ -43,13 +43,51 @@
   </header>
   <div class="entry-content">
     
-      <p>function shuffle(array) {<br>      var m = array.length, t, i;<br>      // While there remain elements to shuffle…<br>      while (m) {<br>        // Pick a remaining element…<br>        i = Math.floor(Math.random() * m—);<br>        // And swap it with the current element.<br>        t = array[m];<br>        array[m] = array[i];<br>        array[i] = t;<br>      }<br>      return array;<br>    }</p>
+      <figure class="highlight lang-javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">function</span> <span class="title">shuffle</span><span class="params">(array)</span> {</span>
+  <span class="keyword">var</span> m = array.length, t, i;
+
+  <span class="comment">// While there remain elements to shuffle…</span>
+  <span class="keyword">while</span> (m) {
+
+    <span class="comment">// Pick a remaining element…</span>
+    i = Math.floor(Math.random() * m--);
+
+    <span class="comment">// And swap it with the current element.</span>
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+
+  <span class="keyword">return</span> array;
+}
+</pre></td></tr></table></figure>
+
 
     
     
     <footer class="meta">
       
       
+  <div class="tags">
+<a href="/tags/algorithm/">algorithm</a></div>
+
       
     </footer>
     
